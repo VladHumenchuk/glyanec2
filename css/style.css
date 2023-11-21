@@ -565,7 +565,7 @@ body {
 }
 
 .statistics {
-  background: url(../img/section2/bec.svg) 0% calc(100% + 70px) no-repeat;
+  background: url(../img/section2/bec.svg) 0% 60% no-repeat;
 }
 
 @supports (padding-top: clamp( 4.375rem , 0.1432619647rem  +  21.1586901763vw , 14.875rem )) {
@@ -577,6 +577,18 @@ body {
 @supports not (padding-top: clamp( 4.375rem , 0.1432619647rem  +  21.1586901763vw , 14.875rem )) {
   .statistics {
     padding-top: calc(4.375rem + 10.5 * (100vw - 20rem) / 49.625);
+  }
+}
+
+@supports (padding-bottom: clamp( 6.25rem , 3.4036523929rem  +  14.2317380353vw , 13.3125rem )) {
+  .statistics {
+    padding-bottom: clamp( 6.25rem , 3.4036523929rem  +  14.2317380353vw , 13.3125rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 6.25rem , 3.4036523929rem  +  14.2317380353vw , 13.3125rem )) {
+  .statistics {
+    padding-bottom: calc(6.25rem + 7.0625 * (100vw - 20rem) / 49.625);
   }
 }
 
@@ -675,18 +687,6 @@ body {
   line-height: 130%;
   opacity: 0.8;
   text-align: center;
-}
-
-@supports (padding-top: clamp( 6.25rem , 3.4036523929rem  +  14.2317380353vw , 13.3125rem )) {
-  .service {
-    padding-top: clamp( 6.25rem , 3.4036523929rem  +  14.2317380353vw , 13.3125rem );
-  }
-}
-
-@supports not (padding-top: clamp( 6.25rem , 3.4036523929rem  +  14.2317380353vw , 13.3125rem )) {
-  .service {
-    padding-top: calc(6.25rem + 7.0625 * (100vw - 20rem) / 49.625);
-  }
 }
 
 .service__container {
